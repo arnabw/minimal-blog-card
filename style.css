@@ -1,4 +1,87 @@
-@import url("https://fonts.googleapis.com/css2?family=Sora:wght@500;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;800&display=swap");
 body {
   font-family: "Sora", sans-serif;
+}
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+.card-body {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #fafaf9;
+}
+.card {
+  width: 336px;
+  margin: 164px;
+  padding: 16px;
+  box-shadow: 0px 30px 100px 0px rgba(17, 23, 41, 0.05);
+  border-radius: 16px;
+}
+img {
+  width: 100%;
+  max-width: 336px;
+  height: 100%;
+  max-height: 152px;
+  object-fit: cover;
+  margin: 16px 0;
+  border-radius: 16px;
+}
+.card-button {
+  background-color: #e6d6fc;
+  color: #883ae1;
+  display: inline;
+  padding: 4px 10px;
+  border-radius: 16px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+.card-heading {
+  font-size: 1.125rem;
+  font-weight: 800;
+  color: #20293a;
+  margin-bottom: 6px;
+}
+.card-content {
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #6c727f;
+  padding-bottom: 20px;
+  border-bottom: solid 1px;
+}
+.card-user {
+  font-size: 0.625rem;
+  font-weight: 300;
+  color: #6c727f;
+}
+
+@media only screen and (max-width: 600px) {
+  .card {
+    width: 300px;
+    margin: 0px;
+    padding: 10px;
+  }
+  img {
+    max-width: 300px;
+    margin: 10px 0;
+  }
+  .card-button {
+    font-size: 0.7rem;
+    margin-bottom: 10px;
+  }
+  .card-heading {
+    font-size: 1rem;
+    margin-bottom: 4px;
+  }
+  .card-content {
+    font-size: 0.8rem;
+    padding-bottom: 15px;
+  }
+  .card-user {
+    font-size: 0.6rem;
+  }
 }
